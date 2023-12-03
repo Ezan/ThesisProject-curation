@@ -1,0 +1,10 @@
+.vscode/
+dependencies/
+#output/
+.DS_Store
+.idea/
+chromedriver
+ImageMagick-7.0.10/*
+xpdf-tool/
+output/
+input/samples/

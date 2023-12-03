@@ -1,0 +1,47 @@
+## README
+
+About
+
+Classes
+
+- PDFigCapX: Extracts the images and captions from input PDF files.
+- FigSplit:
+
+Dependencies
+
+- PDFigCapX
+
+  - Binaries to chromedriver
+  - Binaries to ImageMagick convert
+  - Binaries to xpdf pdftohtml
+  - OpenCV2 version 2.4.X, the module does not run in OpenCV2 version 3.X
+    To instantiate the PDFigCapX class, pass all the paths in the constructor.
+
+  To set up an environment in Windows or Mac, build an environment with Anaconda:
+  conda create -n py27 python=2.7
+  conda install -c menpo opencv
+  conda install -c anaconda numpy
+  conda install -c conda-forge selenium
+  conda install -c anaconda scipy
+  conda install -c anaconda lxml
+  conda install -c anaconda pil
+
+  Mac further needs the installation of Ghostscript
+  https://pages.uoregon.edu/koch/
+
+- FigSplit
+  conda install -c anaconda requests
+
+Run on tinman
+conda activate py27
+cd src
+
+<!-- Xvfb :99 & export DISPLAY=:99 -->
+
+python pipeline_runner.py /Users/eshakya@unomaha.edu/PycharmProjects/curation-pipeline-ddmd/src/config.json /Users/eshakya@unomaha.edu/PycharmProjects/curation-pipeline-ddmd/input/samples /Users/eshakya@unomaha.edu/PycharmProjects/curation-pipeline-ddmd/output 10
+
+python pipeline_runner.py ./config.json ../input ../output 10
+
+Contact
+Juan Trelles Trabucco jtrell2@uic.edu
+Pengyuan Li pengyuan@udel.edu
