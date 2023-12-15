@@ -8,5 +8,4 @@ ImageMagick-7.0.10/*
 xpdf-tool/
 output/
 input/samples/
-Extraction Engine/DDMD/chromedriver
-Extraction Engine/DDMD/datasets
+Extraction Engine/*
